@@ -28,7 +28,7 @@
       <h3>SPLI</h3>
       <h3>TTER</h3>
     </header>
-    <section class="container">
+    <section class="section">
       <div class="calculating">
         <p>Bill</p>
         <div class="field">
@@ -39,8 +39,43 @@
             </span>
           </p>
         </div>
+        <p>Select tip %</p>
+        <div class="all-btns">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input type="number" placeholder="Custom" />
+        </div>
+        <p>Number of People</p>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input is-success" type="number" placeholder="0" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
       </div>
-      <div class="show-result"></div>
+      <div class="show-result">
+        <div class="amount">
+          <div class="description">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="result">$0.00</div>
+        </div>
+        <div class="amount">
+          <div class="description">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="result">$0.00</div>
+        </div>
+        <button class="btn-reset">Reset</button>
+      </div>
     </section>
   </body>
+  <script src="./script/script.js"></script>
 </html>

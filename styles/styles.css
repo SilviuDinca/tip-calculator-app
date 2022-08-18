@@ -7,12 +7,17 @@
   --grayish-cyan: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
   background-color: var(--light-grayish-cyan);
   font-family: "Outfit", sans-serif;
   font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .header {
@@ -29,4 +34,77 @@ body {
 
 .header > h3 {
   color: var(--dark-cyan);
+}
+
+.section {
+  display: flex;
+  width: 60%;
+  background-color: var(--white);
+}
+
+.calculating {
+  background-color: yellow;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.calculating p {
+  color: var(--dark-cyan);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 40px;
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--dark-cyan);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-cyan);
+  border: 1px solid var(--primary-color);
+}
+
+.all-btns > input {
+  background-color: var(--very-light-grayish-cyan);
+  padding: 10px 0px;
+  width: 15%;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.show-result {
+  width: 50%;
+  padding: 20px;
+  background-color: var(--dark-cyan);
+}
+
+.amount {
+  display: flex;
+}
+
+.description > p:first-child {
+  color: var(--white);
+}
+
+.description > p:last-child {
+  color: var(--dark-grayish-cyan);
+  font-size: 14px;
+}
+
+.result {
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.btn-reset {
+  padding: 10px 50px;
 }
